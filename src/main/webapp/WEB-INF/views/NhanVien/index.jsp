@@ -22,6 +22,7 @@
             <th>SDT</th>
             <th>Địa chỉ</th>
             <th>Email</th>
+            <th></th>
         </tr>
         </thead>
         <tbody></tbody>

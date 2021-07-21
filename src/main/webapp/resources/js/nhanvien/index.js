@@ -21,7 +21,14 @@ function loadData(){
                     '<td>' + e.diaChi + '</td>' +
                     '<td>' + e.email + '</td>' +
                     '<td>' + e.sdt + '</td>' +
-                    '</tr>'
+                    '<td class="text-nowrap" style="with:1px;">' +
+                    '<a class="btn btn-sm btn-warning mr-1">Sửa</a>' +
+                    '&nbsp;' +
+                    '<a class="btn btn-sm btn-info mr-1">Chi tiết</a>' +
+                    '&nbsp;' +
+                    '<a class="btn btn-sm btn-danger">Xóa</a>' +
+                    '<td>' +
+                    '</tr>';
             });
             $('#tb-view tbody').empty().append(html);
         }
