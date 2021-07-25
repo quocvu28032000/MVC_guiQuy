@@ -8,9 +8,9 @@ Demo/Service/INhanVien.java
  Demo.Service.INhanVien
 Demo/Service/ICommonService.java
  Demo.Service.ICommonService
-Demo/Service/NhanVienService.java
- Demo.Service.NhanVienService
 Demo/DataAccess/SqlDataAccess.java
  Demo.DataAccess.SqlDataAccess
+Demo/Service/NhanVienService.java
+ Demo.Service.NhanVienService
 Demo/Controller/NhanVienController.java
  Demo.Controller.NhanVienController

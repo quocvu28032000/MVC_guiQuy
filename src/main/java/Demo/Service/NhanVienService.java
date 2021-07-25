@@ -51,7 +51,18 @@ public class NhanVienService extends BaseService implements INhanVien{
 
     @Override
     public boolean add(NhanVien info) {
-        return false;
+        parameters = new ArrayList<> (  );
+
+        query = "execute SP_NhanVien_Insert ? ? ? ? ? ?";
+
+        parameters.add(info.getTenNv ());
+        parameters.add(info.getNgaySinh ().toString ());
+        parameters.add(info.isGioiTinh ()?"true":"false");
+        parameters.add(info.getSdt ());
+        parameters.add(info.getDiaChi ());
+        parameters.add(info.getEmail ());
+
+        return db.executeNonQuery (query,parameters);
     }
 
     @Override
